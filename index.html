@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="p-5">
+    <div class="row">
+        <div class="col-lg-4 offset-sm-1">
+            <div class="w-100 mx-auto d-flex justify-content-center">
+                <h1>CRUD</h1>
+            </div>
+            <div class="w-100 mx-auto py-5">
+                <label for="productNameInput">Name</label>
+                <input type="text" id="productNameInput" oninput="validateProudct(this.value)" class="form-control mb-3 is-invalid">
+                <label for="productPriceInput">Price</label>
+                <input type="text" id="productPriceInput" class="form-control mb-3">
+                <label for="productCatInput">Category</label>
+                <input type="text" id="productCatInput" class="form-control mb-3">
+                <label for="productDescInput">Description</label>
+                <textarea type="text" id="productDescInput" class="form-control mb-3"></textarea>
+                <button id="addbtn" class="btn btn-primary" onclick="addProduct()">Add product</button>
+                <button id="updatebtn" class="btn btn-warning d-none" onclick="getUpdateProudcts()">update product</button>
+            </div>
+            <div class="mx-auto w-75">
+                <input type="text" oninput="serchProducts(this.value)" class="form-control mb-5" placeholder="Search item">
+            </div>
+        </div>
+        <div class="col-lg-6 d-flex align-items-center offset-sm-1">
+            <div class="w-100 mx-auto py-5 ">
+                <table class="table text-center">
+                    <thead>
+                        <th>index</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody id="tableBody">
+                        
+                    </tbody>
+                </table>
+        </div>
+    </div>
+
+    
+    </div>
+
+<script src="js/main.js"></script>    
+</body>
+</html>

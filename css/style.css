@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --head-font:'Alegreya' ; 
+}
+@font-face {
+    font-family:'Alegreya' ;
+    src: url(../webfonts/Alegreya-VariableFont_wght.ttf);
+}
+body{
+    background: linear-gradient(#3c3eca,#d09da0,#847ddb,#f78ad5);
+}
+h1{
+    font-family: var(--head-font);
+    font-size: 80px;
+    font-weight: 800;
+    letter-spacing: 0.5em;
+    color: azure;
+}
