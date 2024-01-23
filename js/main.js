@@ -87,7 +87,7 @@ function deleteProduct(deleteIndex){
 //========================== Update function =============================
 var update = 0 ; 
 function setUpdateProudcts(updateIndex){
-    updateIndex = update ; 
+    update = updateIndex; 
     productNameInput.value = contaner[updateIndex].productName;
     productPriceInput.value= contaner[updateIndex].productPrice;
     productCatInput.value= contaner[updateIndex].productCate;
