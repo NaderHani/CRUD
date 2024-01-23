@@ -1,5 +1,5 @@
 //========================== Inputs =============================
-var productNameInput =document.getElementById('productNameInput'); // بعرف القيم اللي عملتها اي دي في التيكست هنا عن اني بندها بي ال اي دي 
+var productNameInput =document.getElementById('productNameInput');  
 var productPriceInput =document.getElementById('productPriceInput');
 var productCatInput =document.getElementById('productCatInput');
 var productDescInput =document.getElementById('productDescInput');
